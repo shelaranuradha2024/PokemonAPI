@@ -1,23 +1,81 @@
-# Getting Started with Create React App
+# Pokémon Fetch App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple React application that fetches and displays information about Pokémon from the PokeAPI. This app shows a list of 10 Pokémon, including their names, images, heights, and weights.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Fetches data for 10 Pokémon from the PokeAPI.
+- Displays Pokémon names, images, heights, and weights.
+- Simple and responsive design.
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- Axios
+- CSS
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Getting Started
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Follow these instructions to set up and run the app locally.
+
+### Prerequisites
+
+- Node.js (LTS version recommended) - [Download Node.js](https://nodejs.org/)
+- npm (comes with Node.js)
+
+### Installation
+
+1. **Clone the repository:**
+
+    ```bash
+    git clone https://github.com/shelaranuradha2024/PokemonAPI
+    cd cd pokemon-api-app
+    ```
+
+2. **Install dependencies:**
+
+    ```bash
+    npm install
+    ```
+
+3. **Start the development server:**
+
+    ```bash
+    npm start
+    ```
+
+   This will open the app in your default web browser at `http://localhost:3000`.
+
+
+
+### Project Structure
+
+- `src/`: Contains the source code of the application.
+  - `components/`:
+    - `App.js`: Main React component fetching and displaying Pokémon data for 10 pokemon .
+    - `App.css`: Styles for the application.
+  - `index.js`: Entry point of the React application.
+  - `index.css`: Global styles for the application.
+  - `reportWebVitals.js`: Web Vitals reporting utility.
+  - `setupTests.js`: Configuration for testing.
+- `public/`: Contains static assets and the main HTML file.
+- `package.json`: Project metadata and dependencies.
+
+### API Usage
+
+The app fetches Pokémon data from the PokeAPI:
+
+- Base URL: `https://pokeapi.co/api/v2/pokemon/`
+- Example endpoint for Pokémon with ID 1: `https://pokeapi.co/api/v2/pokemon/1`
+
+### Code Explanation
+
+- `App.js`: Contains the main logic for fetching Pokémon data using Axios and rendering the data.
+- `useEffect`: Hook used to fetch data when the component mounts.
+- `axios`: Library used for making HTTP requests.
+- `useState`: Hook used to manage state (loading, error, and Pokémon data).
+
 
 ### `npm run build`
 
